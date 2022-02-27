@@ -1,0 +1,6 @@
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessModel\bin\Debug\BusinessModel.dll
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessModel\bin\Debug\BusinessModel.pdb
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessModel\obj\Debug\BusinessModel.csproj.CoreCompileInputs.cache
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessModel\obj\Debug\BusinessModel.dll
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessModel\obj\Debug\BusinessModel.pdb
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessModel\obj\Debug\BusinessModel.csproj.AssemblyReference.cache

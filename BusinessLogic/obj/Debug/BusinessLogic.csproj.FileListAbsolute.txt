@@ -1,0 +1,14 @@
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\BusinessModel.dll
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\DataAccess.dll
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\BusinessModel.pdb
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\DataAccess.dll.config
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\apurva\source\repos\InvoiceManagement\BusinessLogic\obj\Debug\BusinessLogic.pdb
