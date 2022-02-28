@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessModel;
+using System.Data.Entity;
 
 namespace DataAccess
 {
@@ -18,6 +19,22 @@ namespace DataAccess
                 i = context.SaveChanges();
 
                 return order.Id;
+            }
+        }
+
+        public static Order GetDetails(int id)
+        {
+            using (var context = new InvoiceModel())
+            {
+                return context.Orders.Include(o => o.Client).FirstOrDefault(o => o.Id == id);
+            }
+        }
+
+        public static List<Order> GetOrdersForClient(int clientId)
+        {
+            using (var context = new InvoiceModel())
+            {
+                return context.Orders.Where(o => o.ClientId == clientId).ToList();
             }
         }
     }

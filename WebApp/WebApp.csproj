@@ -166,7 +166,12 @@
     <Content Include="AdminSection\Staffs\ViewStaff.aspx" />
     <Content Include="assets\images\eye.png" />
     <Content Include="assets\images\logo.svg" />
+    <Content Include="ClientSection\Default.aspx" />
+    <Content Include="ClientSection\Orders\OrderDetails.aspx" />
+    <Content Include="ClientSection\Quotations\AllQuotations.aspx" />
+    <Content Include="ClientSection\Quotations\ViewQuotation.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -282,6 +287,41 @@
     <Compile Include="AdminSection\Staffs\ViewStaff.aspx.designer.cs">
       <DependentUpon>ViewStaff.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClientSectionLayout.Master.cs">
+      <DependentUpon>ClientSectionLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSectionLayout.Master.designer.cs">
+      <DependentUpon>ClientSectionLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSection\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSection\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSection\Orders\OrderDetails.aspx.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSection\Orders\OrderDetails.aspx.designer.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSection\Quotations\AllQuotations.aspx.cs">
+      <DependentUpon>AllQuotations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSection\Quotations\AllQuotations.aspx.designer.cs">
+      <DependentUpon>AllQuotations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSection\Quotations\ViewQuotation.aspx.cs">
+      <DependentUpon>ViewQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSection\Quotations\ViewQuotation.aspx.designer.cs">
+      <DependentUpon>ViewQuotation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -289,11 +329,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminSectionLayout.Master" />
     <Content Include="AdminSection\Web.config" />
+    <Content Include="ClientSectionLayout.Master" />
+    <Content Include="ClientSection\Web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -313,7 +362,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClientSection\" />
     <Folder Include="ProductImages\" />
   </ItemGroup>
   <PropertyGroup>

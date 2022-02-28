@@ -13,11 +13,8 @@ namespace DataAccess
         public enum OrderStatus
         {
             Intiated = 1,
-            PRocessing,
             Shipped,
-            Received,
             Delivered,
-            Paid
         }
 
         public static bool AddOrderXStatus(OrderXStatus orderXOrderStatus)

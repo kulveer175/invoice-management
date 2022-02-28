@@ -1,6 +1,7 @@
 namespace DataAccess.Migrations
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -20,13 +21,23 @@ namespace DataAccess.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
 
-            if(context.StaffTypes.Count()<1)
+            if (context.StaffTypes.Count() < 1)
             {
                 context.StaffTypes.Add(new StaffType
                 {
                     Name = "Admin"
                 });
                 context.SaveChanges();
+            }
+
+            if (context.OrderStatus.Count() < 1)
+            {
+                context.OrderStatus.AddRange(new List<OrderStatus>
+                {
+                    new OrderStatus { Status="Intiated" },
+                    new OrderStatus {Status="Shipped"},
+                    new OrderStatus {Status = "Delivered"},
+                });
             }
         }
     }

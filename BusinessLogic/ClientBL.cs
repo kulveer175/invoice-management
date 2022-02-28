@@ -30,6 +30,11 @@ namespace BusinessLogic
             return ClientDA.GetDetails(id);
         }
 
+        public static Client GetDetailsByEmailId(string email)
+        {
+            return ClientDA.GetDetailsByEmailId(email);
+        }
+
         public static List<Client> GetAll()
         {
             return ClientDA.GetAll();
