@@ -37,5 +37,21 @@ namespace DataAccess
                 return context.Orders.Where(o => o.ClientId == clientId).ToList();
             }
         }
+
+        public static List<Order> GetAll()
+        {
+            using (var context = new InvoiceModel())
+            {
+                return context.Orders.Include(o => o.Client).ToList();
+            }
+        }
+
+        public static List<Order> OrderLogs()
+        {
+            using (var context = new InvoiceModel())
+            {
+                return context.Orders.ToList();
+            }
+        }
     }
 }

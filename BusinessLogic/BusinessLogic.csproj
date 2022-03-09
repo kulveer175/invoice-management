@@ -44,6 +44,7 @@
     <Compile Include="ClientBL.cs" />
     <Compile Include="OrderBL.cs" />
     <Compile Include="OrderDetailsBL.cs" />
+    <Compile Include="OrderStatusBL.cs" />
     <Compile Include="OrderXStatusBL.cs" />
     <Compile Include="ProductLineBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

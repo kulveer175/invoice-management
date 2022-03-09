@@ -10,6 +10,10 @@ namespace BusinessLogic
 {
     public class OrderDetailsBL
     {
+        public static bool AddOrderXStatus(OrderXStatus orderXOrderStatus)
+        {
+            return OrderXStatusDA.AddOrderXStatus(orderXOrderStatus);
+        }
         public static List<OrderDetails> GetOrderDetailsForOrder(int orderId)
         {
             return OrderDetailsDA.GetOrderDetailsForOrder(orderId);

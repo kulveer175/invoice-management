@@ -23,7 +23,7 @@ namespace WebApp.AdminSection.Clients
                 dvClientDetails.DataSource = source;
                 dvClientDetails.DataBind();
 
-                hlAllOrders.NavigateUrl = "~/Admin/Orders/ViewOrdersForClient.aspx?clientId=" + Id;
+                hlAllOrders.NavigateUrl = "~/AdminSection/Orders/ViewOrdersForClient.aspx?clientId=" + Id;
             }
         }
     }

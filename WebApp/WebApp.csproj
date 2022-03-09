@@ -154,6 +154,8 @@
     <Content Include="AdminSection\Clients\EditClient.aspx" />
     <Content Include="AdminSection\Clients\ViewClient.aspx" />
     <Content Include="AdminSection\Default.aspx" />
+    <Content Include="AdminSection\Orders\OrderDetails.aspx" />
+    <Content Include="AdminSection\Orders\ViewOrdersForClient.aspx" />
     <Content Include="AdminSection\Products\AddProduct.aspx" />
     <Content Include="AdminSection\Products\AllProductLine.aspx" />
     <Content Include="AdminSection\Products\EditProduct.aspx" />
@@ -216,6 +218,20 @@
     </Compile>
     <Compile Include="AdminSection\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSection\Orders\OrderDetails.aspx.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSection\Orders\OrderDetails.aspx.designer.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSection\Orders\ViewOrdersForClient.aspx.cs">
+      <DependentUpon>ViewOrdersForClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSection\Orders\ViewOrdersForClient.aspx.designer.cs">
+      <DependentUpon>ViewOrdersForClient.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminSection\Products\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>

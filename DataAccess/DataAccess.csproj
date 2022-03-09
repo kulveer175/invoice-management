@@ -61,6 +61,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OrderDA.cs" />
     <Compile Include="OrderDetailsDA.cs" />
+    <Compile Include="OrderStatusDA.cs" />
     <Compile Include="OrderXStatusDA.cs" />
     <Compile Include="ProductLineDA.cs" />
     <Compile Include="QuotationDA.cs" />
