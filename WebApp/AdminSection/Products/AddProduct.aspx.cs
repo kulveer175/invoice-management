@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BusinessLogic;
 using BusinessModel;
+using Microsoft.Azure.Storage;
+using Microsoft.Azure.Storage.Blob;
 
 namespace WebApp.AdminSection.Products
 {
@@ -40,18 +43,26 @@ namespace WebApp.AdminSection.Products
         {
             if (fuPhotoUrl.HasFile)
             {
-                string relativePath = "~/ProductImages";
-                string absolutePath = Server.MapPath(relativePath);
-
                 string extension = System.IO.Path.GetExtension(fuPhotoUrl.FileName);
 
                 Guid g = Guid.NewGuid();
 
-                string pathToSave = String.Format("{0}/{1}{2}", absolutePath, g.ToString(), extension);
-                fuPhotoUrl.SaveAs(pathToSave);
+                CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=invoicemanagementstorage;AccountKey=Nn+5JclBDuuEFHpiPEIeDLH398lpbFdDcgIgrWb53rh74icwHXTxVCzs98NKPi0NysBh/ZYWx7+7+AStyntfaQ==;EndpointSuffix=core.windows.net");
+                var cloudBlobClient = cloudStorageAccount.CreateCloudBlobClient();
 
-                string relativePathOfPhoto = string.Format("{0}/{1}{2}", relativePath, g.ToString(), extension);
-                imgProductPhoto.ImageUrl = relativePathOfPhoto;
+                var cloudBlobContainer = cloudBlobClient.GetContainerReference("productimages");
+                cloudBlobContainer.CreateIfNotExists();
+                cloudBlobContainer.SetPermissions(new BlobContainerPermissions
+                { 
+                    PublicAccess = BlobContainerPublicAccessType.Blob 
+                });
+
+                var cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(String.Format("{0}{1}",g.ToString(),extension));
+                cloudBlockBlob.UploadFromStream(fuPhotoUrl.FileContent);
+
+                string finalPath = "https://invoicemanagementstorage.blob.core.windows.net/productimages/"+ String.Format("{0}{1}", g.ToString(), extension);
+
+                imgProductPhoto.ImageUrl = finalPath;
             }
         }
     }

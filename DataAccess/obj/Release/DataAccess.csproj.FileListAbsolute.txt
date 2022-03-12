@@ -1,0 +1,16 @@
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\DataAccess.dll.config
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\DataAccess.dll
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\DataAccess.pdb
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\BusinessModel.dll
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\EntityFramework.dll
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\BusinessModel.pdb
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\EntityFramework.xml
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\obj\Release\DataAccess.csproj.AssemblyReference.cache
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\obj\Release\DataAccess.Migrations.AddedAllModels.resources
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\obj\Release\DataAccess.csproj.GenerateResource.cache
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\obj\Release\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\obj\Release\DataAccess.csproj.CopyComplete
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\obj\Release\DataAccess.dll
+C:\Users\apurva\source\repos\InvoiceManagement\DataAccess\obj\Release\DataAccess.pdb
